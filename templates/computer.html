@@ -1,16 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <form action="">
-        <label for="">Name:</label>
-        <input type="text">
+    <form action="/computer" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-        <label for="">Choose:</label>
-        <select name="" id=""></select>
+        <label for="choose">Choose:</label>
+        <select name="choose" id="choose" required>
+            <option value="rock">🪨</option>
+            <option value="paper">📄</option>
+            <option value="scissors">✂️</option>
+        </select>
 
         <button>Play</button>
-
-
-
     </form>
-{% endblock %}
+
+    <div>
+        {{ win }}
+    </div>
+
+{% endblock %}                
