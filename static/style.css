@@ -13,6 +13,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 400px;
 }
 
 a{
@@ -22,13 +23,16 @@ a{
 .wrapper{
     display: flex;
     flex-direction: column;
+    width: 400px;
 }
 
 form{
-    width: 300px;
+    width: 400px;
+
 }
 
 button{
     width: 75px;
     height: 30px
 }
+
