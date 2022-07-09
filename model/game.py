@@ -14,7 +14,7 @@ class Game:
         if self.player1.choice == 'rock' and self.player2.choice == 'paper':
             return self.player2
 
-        if self.player1.choice == 'rock' and self.player2.choice == 'scissor':
+        if self.player1.choice == 'rock' and self.player2.choice == 'scissors':
             return self.player1
 
         if self.player1.choice == 'paper' and self.player2.choice == 'paper':
@@ -23,13 +23,14 @@ class Game:
         if self.player1.choice == 'paper' and self.player2.choice == 'rock':
             return self.player1
 
-        if self.player1.choice == 'paper' and self.player2.choice == 'scissor':
+        if self.player1.choice == 'paper' and self.player2.choice == 'scissors':
             return self.player2
 
-        if self.player1.choice == 'scissor' and self.player2.choice == 'scissor':
+        if self.player1.choice == 'scissors' and self.player2.choice == 'scissors':
             return 
 
-        if self.player1.choice == 'scissor' and self.player2.choice == 'rock':
+        if self.player1.choice == 'scissors' and self.player2.choice == 'rock':
             return self.player2
-        if self.player1.choice == 'scissor' and self.player2.choice == 'paper':
+            
+        if self.player1.choice == 'scissors' and self.player2.choice == 'paper':
             return self.player1
