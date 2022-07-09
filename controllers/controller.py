@@ -60,10 +60,17 @@ def computers():
         p1_picked= f"{user.name} picked: {user.choice}"
         p2_picked = f"{computer.name} picked: {computer.choice}"
         win = f"Its a draw, play again"
-    else:
+        return render_template("draw.html", win=win ,p1_picked=p1_picked, p2_picked=p2_picked)
+    elif winner == computer:
         p1_picked= f"{user.name} picked: {user.choice}"
         p2_picked = f"{computer.name} picked: {computer.choice}"
         win = f"The winner is: {winner.name}"
-    return render_template("computer.html", win=win ,p1_picked=p1_picked, p2_picked=p2_picked)
+        return render_template("comp_win.html", win=win ,p1_picked=p1_picked, p2_picked=p2_picked)
+    elif winner == user:
+        p1_picked= f"{user.name} picked: {user.choice}"
+        p2_picked = f"{computer.name} picked: {computer.choice}"
+        win = f"The winner is: {winner.name}"
+        return render_template("user_win.html", win=win ,p1_picked=p1_picked, p2_picked=p2_picked)
+
 
 
